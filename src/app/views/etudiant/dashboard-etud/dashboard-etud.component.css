@@ -1,0 +1,2308 @@
+/* rgba(255, 201, 56, 0.75) - rgba(255, 80, 82, 0.75) */
+/* #333 - #c92b2b - #f26b6b - #6ddbc5 - #fff968 - #fff */
+/* ====================================== Start General ====================================== */
+@import url('https://fonts.googleapis.com/css?family=Bungee|Kaushan+Script|Roboto|Montserrat');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+body {
+    overflow-x: hidden;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+li {
+    display: inline-block
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #dbdbdb
+}
+
+::-moz-placeholder {
+    color: #dbdbdb
+}
+
+:-moz-placeholder {
+    color: #dbdbdb
+}
+
+:-ms-input-placeholder {
+    color: #dbdbdb
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-button {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6ddbc5;
+    border: 71px none #ffffff;
+    border-radius: 31px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #69ddc9;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #9ecec6;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;
+    border: 65px none #ffffff;
+    border-radius: 34px;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: #fff;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #fff;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+ea5151::-moz-selection {
+    color: #fff;
+    background: #f26b6b
+}
+
+::selection {
+    color: #fff;
+    background: #f26b6b
+}
+
+.test {
+    width: 500px;
+    height: 200px;
+    overflow-Y: scroll
+}
+
+.scroll {
+    height: 500px;
+}
+
+/* ====================================== End General ====================================== */
+/* ====================================== Start Form Search ================================ */
+.form-search {
+    margin: auto;
+    background-image: linear-gradient(to top, rgba(255, 80, 82, 0.75), rgba(255, 80, 82, 0.75)), url("https://lh3.googleusercontent.com/-VyePWjRQOv0/WFD0JEYnyWI/AAAAAAACF_o/Xem5CZC4gVAibc15jR-HYccjIiYXB56LACL0B/w968-h572-no/header.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: none
+}
+
+.form-search input {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    outline: none;
+    border: 0
+}
+
+/* ====================================== End Form Search =================================== */
+/* ====================================== Start Header ====================================== */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(105, 0, 167, 0.75), rgba(92, 7, 228, 0.75)), url("https://static.vecteezy.com/system/resources/previews/005/210/247/non_2x/bright-abstract-background-orange-color-free-vector.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    text-shadow: 0 0 5px #666;
+}
+
+.header .container {
+    position: relative
+}
+
+.header a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #666;
+}
+
+.header .header-flex {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999
+}
+
+.header .header-flex>div {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------- */
+.header .header-flex>div:first-of-type {
+    /*-- 01 --*/
+    position: absolute;
+    top: 10px;
+}
+
+.header .header-flex>div:first-of-type h2 {
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    margin-left: 1%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header .header-flex>div:first-of-type h2:hover a {
+    color: #fff968;
+}
+
+.header .header-flex>div:first-of-type>div {
+    position: absolute;
+    right: 0;
+    margin-right: 1%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.header .header-flex>div:first-of-type div a {
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer
+}
+
+.header .header-flex>div:first-of-type div a:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #fff968;
+    transition: all .5s ease
+}
+
+.header .header-flex>div:first-of-type div a:hover:before,
+.header .header-flex>div:first-of-type div .active:before {
+    width: 100%;
+}
+
+.header .header-flex>div:first-of-type div a:hover,
+.header .header-flex>div:first-of-type div .active {
+    color: #fff968;
+}
+
+/* -------------------------------------------------------------- */
+.header .header-flex>div:nth-of-type(2) h2 {
+    /*-- 02 --*/
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4vw;
+    margin-bottom: 15px
+}
+
+/* -------------------------------------------------------------- */
+.header .header-flex>div:nth-of-type(3) {
+    /*-- 03 --*/
+}
+
+.header .header-flex>div:nth-of-type(3) h1 {
+    font-size: 9vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -------------------------------------------------------------- */
+.header .header-flex>div:nth-of-type(4) {
+    /*-- 04 --*/
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    border-top: 3px solid #fff
+}
+
+/* -------------------------------------------------------------- */
+.header .header-flex>div:nth-of-type(5) a {
+    /*-- 05 --*/
+    padding: 5px 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 5px #777;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all .3s ease-in-out
+}
+
+.header .header-flex>div:nth-of-type(5) a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: none;
+    font-weight: bold
+}
+
+/* -------------------------------------------------------------- */
+.header .header-flex>div:last-of-type {
+    /*-- 06 --*/
+    position: absolute;
+    bottom: 0;
+}
+
+.header .header-flex>div:last-of-type div {
+    display: flex;
+    align-items: center
+}
+
+.header .header-flex>div:last-of-type div a {
+    margin: 1%;
+    padding: 1%;
+    flex-grow: 1;
+    text-align: left;
+    border-top: 3px solid #fff;
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px
+}
+
+.header .header-flex>div:last-of-type div a:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #c92b2b;
+    transition: all .5s ease
+}
+
+.header .header-flex>div:last-of-type div .active:before,
+.header .header-flex>div:last-of-type div a:hover:before {
+    width: 85px
+}
+
+.header .header-flex>div:last-of-type div a:hover,
+.header .header-flex>div:last-of-type div .active {
+    color: #333;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+/* ====================================== End Header ====================================== */
+/* ====================================== Start About ====================================== */
+.about {
+    margin-top: 100px;
+}
+
+.about p {
+    color: #777;
+}
+
+.about ul {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.about ul li {
+    width: 30%;
+    margin: 2% 1%;
+    height: 20vw;
+    background-size: cover;
+    position: relative;
+    transition: all .5s ease-in-out;
+    overflow: hidden
+}
+
+
+
+.about ul li .about-li-div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    transition: all .5s ease-in-out;
+    opacity: 0
+}
+
+.about ul li .fa,
+.about ul li h4 {
+    position: absolute;
+    color: #fff;
+    z-index: 999;
+    transition: all .5s ease-in-out;
+    text-shadow: 0 0 5px #666;
+    text-transform: uppercase
+}
+
+.about ul li .fa {
+    top: -35px;
+    left: calc(50% - 15px);
+}
+
+.about ul li h4 {
+    bottom: -50px;
+    font-weight: bold;
+    left: calc(50% - 50px)
+}
+
+
+/* ====================================== End About ====================================== */
+/* ====================================== Start Progress ====================================== */
+.progress-pure {
+    margin-top: 100px;
+    width: 100%;
+    background: #6ddbc5
+}
+
+.progress-pure .progress-flex {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress-pure .progress-flex>div {
+    margin: 25px auto;
+    padding: 10px;
+    border-right: 1px solid #c1efe7;
+    flex-grow: 1;
+}
+
+.progress-pure .progress-flex>div:first-of-type {
+    border-left: 1px solid #c1efe7
+}
+
+.progress-pure .progress-flex>div a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #666;
+    text-transform: uppercase
+}
+
+.progress-pure .progress-flex>div a span {
+    min-width: 150px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/* ====================================== End Progress ====================================== */
+/* ====================================== Strart Service ====================================== */
+.service {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.service .row>div {
+    border-bottom: 1px solid #eee
+}
+
+.service .service-flex {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    min-height: 130px;
+    margin: 15px auto 0;
+}
+
+.service .service-flex:hover {
+    background: #f7f7f7
+}
+
+.service .service-flex .fa {
+    color: #6ddbc5;
+    text-shadow: 0 0 1px #666;
+}
+
+.service .service-flex article {
+    margin-left: 15px;
+}
+
+.service .service-flex article h4 {
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.service .service-flex article p {
+    text-align: left
+}
+
+/* ====================================== End Service ====================================== */
+/* ====================================== Start Unique ====================================== */
+.unique {
+    width: 100%;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)), url("http://www3.0zz0.com/2011/09/26/06/607552934.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.unique .small-border {
+    margin-bottom: 50px;
+}
+
+.unique-screen {
+    margin: auto;
+    width: 475px;
+    height: 575px;
+    position: relative;
+}
+
+.unique-screen .computer {
+    width: 100%;
+    height: 100%;
+    padding: 55px 20px 0 20px;
+    top: 0;
+    border-radius: 25px 25px 0 0;
+    border-top: 3px solid #ccc;
+    border-bottom: 0;
+    border-left: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+}
+
+.unique-screen .mobile {
+    width: 200px;
+    height: 435px;
+    bottom: -50px;
+    right: -100px;
+    padding: 45px 15px;
+    border-radius: 25px;
+    border: 2px solid #ccc;
+    transition: all .3s ease-in-out;
+}
+
+.unique-screen .computer>div {
+    border-top: 3px solid #555;
+    border-bottom: 0;
+    border-left: 3px solid #555;
+    border-right: 3px solid #555;
+}
+
+.unique-screen .mobile>div {
+    border: 2px solid #555;
+    position: relative
+}
+
+.unique-screen .computer,
+.unique-screen .mobile {
+    background: #fff;
+    position: absolute;
+}
+
+.unique-screen .computer>div,
+.unique-screen .mobile>div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: all 10s ease-in-out;
+    background-image: url("http://www.webtechelp.net/wp-content/uploads/2014/09/Hope-Center.jpg");
+}
+
+.unique-screen .computer div:hover,
+.unique-screen .mobile div:hover {
+    background-position: bottom
+}
+
+.unique-screen .computer:hover {
+    z-index: 3;
+}
+
+.computer:hover~.mobile {
+    bottom: 15px
+}
+
+
+
+
+.unique-screen .computer:after,
+.unique-screen .computer:before {
+    content: "";
+    position: absolute;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.unique-screen .computer:after {
+    width: 7px;
+    height: 7px;
+    left: 46%;
+    top: 27px
+}
+
+.unique-screen .computer:before {
+    width: 12px;
+    height: 12px;
+    right: 46%;
+    top: 25px
+}
+
+.unique-screen .mobile:after,
+.unique-screen .mobile:before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.unique-screen .mobile:after {
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    background: #aaa
+}
+
+.unique-screen .mobile:before {
+    bottom: -5px;
+    width: 27px;
+    height: 27px;
+    border: 1px solid #aaa
+}
+
+.unique-screen .mobile>div:after,
+.unique-screen .mobile>div:before {
+    content: "";
+    position: absolute;
+}
+
+.unique-screen .mobile>div:after {
+    width: 30px;
+    height: 3px;
+    background: #777;
+    left: 45%;
+    top: -17px;
+    border-radius: 2px
+}
+
+.unique-screen .mobile>div:before {
+    width: 5px;
+    height: 5px;
+    left: 37%;
+    top: -19px;
+    background: #777;
+    border-radius: 50%
+}
+
+/* ====================================== End Unique ====================================== */
+/* ====================================== Start Service Other ====================================== */
+.service-other {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.service-other p {
+    color: #777;
+}
+
+.service-other-content {
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+}
+
+.service-other-content>div {
+    width: 100%
+}
+
+.service-other-content>div:first-of-type {
+    background-image: url("https://www.arkadin.co.uk/sites/default/files/arkadin_casestudy-business_adviser_analyzing_financial_figures.jpg");
+    background-size: cover;
+    transition: background .5s ease-in-out;
+    margin-right: 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-other-content>div:first-of-type span {
+    position: absolute;
+    color: #fff;
+    text-shadow: 0 0 1px #666;
+    transition: all .5s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold
+}
+
+.service-other-content>div:first-of-type span .fa {
+    transition: all .5s ease-in-out;
+}
+
+.service-other-content>div:first-of-type span .fa:hover {
+    color: #fff968;
+    cursor: pointer;
+    transform: rotate(360deg)scale(.8);
+}
+
+.service-other-content>div:first-of-type span:first-of-type {
+    top: 25px;
+    right: -50%
+}
+
+.service-other-content>div:first-of-type span:last-of-type {
+    bottom: 25px;
+    left: -100%
+}
+
+.service-other-content>div:first-of-type:hover span:first-of-type {
+    top: 25px;
+    right: 5px
+}
+
+.service-other-content>div:first-of-type:hover span:last-of-type {
+    bottom: 25px;
+    left: 25px
+}
+
+.service-other-content>div:first-of-type>div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    transition: all .5s ease-in-out;
+    opacity: 0
+}
+
+.service-other-content>div:first-of-type:hover div {
+    opacity: 1;
+}
+
+.service-other-content>div:first-of-type:hover {
+    background-position: right;
+    box-shadow: 7px 7px 0 #6ddbc5;
+}
+
+.service-other-content dl {
+    width: 100%;
+    margin-bottom: 0
+}
+
+.service-other-content dl dt {
+    text-align: left;
+    margin-top: 7px;
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fafafa;
+    cursor: pointer
+}
+
+.service-other-content dl dt:first-of-type {
+    margin-top: 0
+}
+
+.service-other-content dl dt h5 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+    letter-spacing: 1.5px;
+    position: relative;
+    top: -4px
+}
+
+.service-other-content dl dt .fa {
+    color: #6ddbc5;
+    text-shadow: 0 0 1px #999;
+    padding: 5px 5px 0
+}
+
+.service-other-content dl dd {
+    border: 1px solid #ddd;
+    color: #777;
+    height: 250px;
+}
+
+.service-other-content dl dd p {
+    overflow-y: scroll;
+    padding: 10px;
+    height: 100%;
+    text-align: justify
+}
+
+.service-other-content .accordion-hide {
+    display: none
+}
+
+.service-other-content span {
+    float: right;
+    margin-right: 25px;
+    color: #777;
+    font-size: 24px;
+}
+
+/* ====================================== End Service Other ====================================== */
+/* ====================================== Start Slider Text ====================================== */
+.slidertext {
+    margin-bottom: 75px;
+    background: #f6f6f6;
+}
+
+.slideroneimg {
+    background: #f6f6f6;
+}
+
+.slidertext-parent,
+.slideroneimg-parent {
+    background: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+}
+
+.slidertext-ul,
+.slideroneimg-ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex
+}
+
+.slidertext-parent .fa,
+.slideroneimg-parent .fa {
+    text-shadow: 0 0 1px #666
+}
+
+.slidertext-parent>.fa,
+.slideroneimg-parent>.fa {
+    position: absolute;
+    top: calc(50% - 15px);
+    color: #777;
+    z-index: 999;
+    cursor: pointer;
+    transition: all .5s
+}
+
+.slidertext-parent>.fa:hover,
+.slideroneimg-parent>.fa:hover {
+    transform: scale(1.7);
+    color: #6ddbc5;
+}
+
+.slidertext-parent>.fa:first-of-type,
+.slideroneimg-parent>.fa:first-of-type {
+    left: 5px
+}
+
+.slidertext-parent>.fa:last-of-type,
+.slideroneimg-parent>.fa:last-of-type {
+    right: 5px
+}
+
+.slidertext-ul-li,
+.slideroneimg-ul-li {
+    display: block
+}
+
+/* ------------------ Text ------------------------ */
+.slidertext-flex,
+.slideroneimg-flex {
+    display: flex;
+    padding: 25px
+}
+
+.slideroneimg-flex {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slideroneimg-flex {
+    align-items: center;
+}
+
+.slidertext-flex>.fa {
+    color: #6ddbc5;
+    display: block;
+    border: 3px solid #6ddbc5;
+    padding: 25px;
+    margin: 5px
+}
+
+.slideroneimg-flex img {
+    border: 2px solid #ccc;
+    padding: 5px;
+    background: #fff;
+    border-radius: 50%;
+    opacity: .75;
+    transition: all .5s ease-in-out
+}
+
+.slideroneimg-flex:hover img {
+    opacity: 1
+}
+
+.slidertext-flex blockquote p,
+.slideroneimg-flex blockquote p {
+    text-align: left;
+    color: #666
+}
+
+.slidertext-flex blockquote h3,
+.slideroneimg-flex blockquote h3 {
+    text-align: left;
+    color: #444
+}
+
+.slidertext-flex blockquote h3:before,
+.slideroneimg-flex blockquote h3:before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    display: inline-block;
+    background: #f26b6b;
+    margin-right: 10px
+}
+
+/* ====================================== End Slider Text ====================================== */
+/* ====================================== Start Meet ====================================== */
+.meet .meet-content {
+    display: flex
+}
+
+.meet p {
+    color: #777;
+    margin-bottom: 50px
+}
+
+.meet .meet-content figure {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+.meet .meet-content figure div {
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+}
+
+.meet .meet-content figure.one>div {
+    background-image: url("http://menshaircutstyle.com/wp-content/uploads/mens-long-hairstyle.jpg");
+    background-position: center;
+}
+
+.meet .meet-content figure.two>div {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/25/03/83/2503830a177561f5287f162e3bdbd2c3.jpg")
+}
+
+.meet .meet-content figure.three>div {
+    background-image: url("https://static.pexels.com/photos/26939/pexels-photo-26939.jpg")
+}
+
+.meet .meet-content figure figcaption h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.meet .meet-content figure figcaption span {
+    color: #888
+}
+
+.meet .meet-content figure div ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    opacity: 0;
+    margin: auto
+}
+
+.meet .meet-content figure div ul li .fa {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    transition: all 1s ease-in-out, background .3s ease-in-out, color .3s ease-in-out;
+    margin-left: 1px;
+    position: relative;
+    background: #f26b6b;
+}
+
+.meet .meet-content figure div ul li:first-of-type .fa {
+    left: -250px
+}
+
+.meet .meet-content figure div ul li:nth-of-type(2) .fa {
+    bottom: -250px
+}
+
+.meet .meet-content figure div ul li:nth-of-type(3) .fa {
+    top: -250px
+}
+
+.meet .meet-content figure div ul li:last-of-type .fa {
+    right: -250px
+}
+
+.meet .meet-content figure div ul li .fa:hover {
+    background: #fff968;
+    color: #f26b6b
+}
+
+.meet .meet-content figure div ul:hover li:first-of-type .fa {
+    left: 0
+}
+
+.meet .meet-content figure div ul:hover li:nth-of-type(2) .fa {
+    bottom: 0
+}
+
+.meet .meet-content figure div ul:hover li:nth-of-type(3) .fa {
+    top: 0
+}
+
+.meet .meet-content figure div ul:hover li:last-of-type .fa {
+    right: 0
+}
+
+.meet .meet-content figure div ul:hover {
+    box-shadow: 7px 7px 0 #6ddbc5;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+/* ====================================== End Meet ====================================== */
+/* ====================================== Start filter ====================================== */
+/* #333 - #c92b2b - #f26b6b - #6ddbc5 - #fff968 - #fff */
+.filter {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.filter input[type="radio"] {
+    display: none;
+}
+
+.filter label {
+    width: 23%;
+    float: left;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #333;
+    padding: 1%;
+    margin: 0.5%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.filter input[type="radio"][id="blue"]:checked+label {
+    background: #6ddbc5;
+}
+
+.filter input[type="radio"][id="blue"]:checked~.red,
+input[type="radio"][id="blue"]:checked~.green {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.filter input[type="radio"][id="red"]:checked+label {
+    background: #f26b6b;
+}
+
+.filter input[type="radio"][id="red"]:checked~.blue,
+input[type="radio"][id="red"]:checked~.green {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.filter input[type="radio"][id="green"]:checked+label {
+    background: #fff968;
+}
+
+.filter input[type="radio"][id="green"]:checked~.blue,
+input[type="radio"][id="green"]:checked~.red {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+}
+
+.filter .tile {
+    width: 23%;
+    float: left;
+    transition: all 1s;
+    margin: 0.5%;
+    padding: 3px;
+    position: relative;
+    overflow: hidden
+}
+
+.filter .tile:before {
+    content: attr(data-title);
+    color: #fff;
+    font-weight: bold;
+    color: #222;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 999;
+    padding: 0 10px;
+    transform: translate(-50%, 0);
+    transition: all .5s
+}
+
+.filter .tile>img {
+    border-radius: 90% 0 0 0;
+    transition: all .5s;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: .5;
+}
+
+.filter .tile:hover:before {
+    bottom: -50px;
+}
+
+.filter .tile:hover>img {
+    opacity: 1;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    border-radius: 0 0 25% 0;
+    cursor: url("https://lh5.googleusercontent.com/-bqXUI_5l9oI/WGDwLzdTWsI/AAAAAAACGJ0/ySrFL2mGwa45SqifvceFjHgEh3ErfDlpgCL0B/w63-h43-no/eye.png.png"), default
+}
+
+.filter .green,
+.filter .green:before {
+    background: #fff968;
+}
+
+.filter .blue,
+.filter .blue:before {
+    background: #6ddbc5;
+}
+
+.filter .red,
+.filter .red:before {
+    background: #f26b6b;
+}
+
+/* --------- Start title-fixed -------- */
+.filter .tile-fixed {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 99999;
+}
+
+.filter .tile-fixed img {
+    height: 100vh;
+    max-height: 100vh;
+    cursor: pointer
+}
+
+/* --------- End title-fixed -------- */
+/* ====================================== End filter ====================================== */
+/* ====================================== Start Images ====================================== */
+.images {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background: #f6f6f6;
+}
+
+.images ul {
+    display: flex;
+    justify-content: space-around
+}
+
+.images ul li img {
+    opacity: .45;
+    transition: all .5s ease-in-out
+}
+
+.images ul li img:hover {
+    transform: rotate(360deg) scale(1.2);
+    opacity: .9;
+
+}
+
+/* ====================================== End Images ====================================== */
+/* ====================================== Start Some ====================================== */
+.some p {
+    color: #777;
+    margin-bottom: 50px
+}
+
+.some .da-thumbs {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+    margin-bottom: 200px
+}
+
+.some .da-thumbs>div {
+    width: 25%;
+    background-color: #eee;
+    position: relative;
+    float: left
+}
+
+.some .da-thumbs>div a {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.some .da-thumbs>div a img {
+    width: 100%;
+    height: 100%;
+}
+
+.some .da-thumbs>div a div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.some .da-thumbs>div a div h5 {
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    letter-spacing: 10px;
+    transition: all 1s ease
+}
+
+.some .da-thumbs>div a div:hover h5,
+.da-thumbs>div:hover h5 {
+    letter-spacing: 1.5px;
+    font-weight: bold
+}
+
+.some .da-thumbs>div a div i:hover {
+    font-style: normal;
+    color: #fff968
+}
+
+.some .da-thumbs>div a div .fa {
+    margin: 5px;
+    transition: all .5s ease
+}
+
+.some .da-thumbs>div a div .fa:hover {
+    transform: scale(.9) rotate(-15deg);
+    color: #fff968
+}
+
+/* ====================================== End Some ====================================== */
+/* ====================================== Start Client ====================================== */
+.unique .unique-client {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    display: flex
+}
+
+.unique .row {
+    margin-bottom: 50px
+}
+
+.unique .unique-client .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in-out;
+    border: 3px solid transparent;
+    background-clip: content-box
+}
+
+.unique .unique-client:hover .img {
+    border: 3px solid #6ddbc5;
+    transform: rotate(-10deg);
+}
+
+.unique .unique-client .img.one {
+    background-image: url("https://static1.squarespace.com/static/53cc31dae4b06d1cfa9e2c10/5547f409e4b0c6477c8e3d30/5547f409e4b04971ef9f92b0/1430778890192/kiss925.jpg?format=1000w");
+    background-position: 80%
+}
+
+.unique .unique-client .img.two {
+    background-image: url("https://i.ytimg.com/vi/SY9kaIuXjJ4/maxresdefault.jpg")
+}
+
+.unique .unique-client .img.three {
+    background-image: url("https://cdn.pixabay.com/photo/2015/02/08/20/57/man-629062_960_720.jpg")
+}
+
+.unique .unique-client .img.four {
+    background-image: url("http://combiboilersleeds.com/images/man/man-1.jpg")
+}
+
+.unique .unique-client .text {
+    width: calc(100% - 100px);
+    margin-left: 15px;
+}
+
+.unique .unique-client .text,
+.unique .unique-client .text h4,
+.unique .unique-client .text p {
+    text-align: left
+}
+
+.unique .unique-client .text h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.unique-client .text p {
+    color: #666;
+}
+
+.unique-client .text p:before {
+    content: "";
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    border-top: 3px solid #f26b6b;
+}
+
+/* ====================================== End Client ====================================== */
+/* ====================================== Start Stories ====================================== */
+.stories {
+    margin-bottom: 100px
+}
+
+.stories .stories-content {
+    display: flex
+}
+
+.stories p {
+    color: #777;
+    margin-bottom: 50px
+}
+
+.stories .stories-content figure {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    padding: 15px;
+}
+
+.stories .stories-content figure div {
+    width: 100%;
+    margin-bottom: 15px;
+    background-size: cover;
+    opacity: .8;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+
+.stories .stories-content figure div p {
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+    background: #6ddbc5;
+    padding: 0 13px 3px 13px;
+    margin: 0;
+    transition: all .3s ease-in-out;
+    cursor: pointer
+}
+
+.stories .stories-content figure div p span {
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+    margin: 0;
+    color: #fff
+}
+
+.stories .stories-content figure div p span:first-of-type {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.stories .stories-content figure div:hover {
+    opacity: 1
+}
+
+.stories .stories-content figure div:hover p {
+    bottom: 30px
+}
+
+.stories .stories-content figure.one>div {
+    background-image: url("http://www.rsc.org/careers/future/sites/futureinchemistry/files/uploads/study%20options_shutterstock_148640279.jpg");
+    background-position: center;
+}
+
+.stories .stories-content figure.two>div {
+    background-image: url("http://static.communitytable.parade.com/wp-content/uploads/2014/02/working-from-home-health-ftr.jpg")
+}
+
+.stories .stories-content figure.three>div {
+    background-image: url("https://www.insightstudy.co.uk/images/study_work/insight-greenwich-school-study+work.jpg")
+}
+
+.stories .stories-content figure figcaption {
+    margin-top: 25px;
+    text-align: left
+}
+
+.stories .stories-content figure figcaption h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-bottom: 10px
+}
+
+.stories .stories-content figure figcaption span {
+    color: #888
+}
+
+.stories .stories-content figure figcaption .fa {
+    color: #6ddbc5;
+    margin-left: 5px;
+    cursor: pointer
+}
+
+.stories .stories-content figure figcaption hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ====================================== End Stories ====================================== */
+/* ====================================== Start Map ====================================== */
+.map {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .75), rgba(255, 255, 255, .75)), url("http://www3.0zz0.com/2011/09/26/06/607552934.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f26b6b
+}
+
+.map .map-content {
+    display: inline-block;
+    cursor: pointer
+}
+
+.map .map-content .fa {
+    font-size: 25px
+}
+
+.map .map-content h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+.map .map-content h4:after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    width: 50px;
+    border-top: 3px solid #f26b6b;
+}
+
+.map .map-content .overlay-map {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.75), rgba(255, 80, 82, 0.75));
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.overlay-map>div {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+/* ====================================== End Map ====================================== */
+/* ====================================== Start Footer ====================================== */
+footer {
+    padding-top: 50px;
+    background: #F8F8F8
+}
+
+footer .img,
+footer .footer-three ul li {
+    position: relative;
+    overflow: hidden;
+    opacity: .8;
+    transition: all .2s ease-in-out
+}
+
+footer .img:hover,
+footer .footer-three ul li:hover {
+    opacity: 1
+}
+
+footer .img:hover div,
+footer .footer-three ul li:hover div {
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 0 50% 50% 50%;
+    transform: rotate(0);
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 1), rgba(255, 80, 82, 1));
+}
+
+footer .img>div,
+footer .footer-three ul li div {
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    top: 61%;
+    left: 9%;
+    transform: rotate(70deg);
+    background-image: linear-gradient(to top, rgba(255, 201, 56, 0.7), rgba(255, 80, 82, 0.7));
+    transition: all .5s ease-in-out;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+footer .img>div a,
+footer .footer-three ul li div a {
+    color: #fff;
+    text-shadow: 0 0 1px #666;
+    position: relative;
+    bottom: -2px
+}
+
+footer .img>div a:hover,
+footer .footer-three ul li div a:hover {
+    color: #fff968
+}
+
+footer .footer-content h2,
+footer .footer-content h5,
+footer .footer-content p,
+footer .footer-two-flex .text,
+footer .footer-one,
+.footer-one form,
+footer .footer-one ul,
+footer .footer-three {
+    text-align: left
+}
+
+footer .footer-content h2 {
+    color: #555;
+    margin-top: 0
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+footer .footer-content p {
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 12px
+}
+
+footer .container {
+    display: flex
+}
+
+footer .container .footer-content {
+    width: 100%;
+    max-width: 500px;
+    margin: 1%;
+}
+
+footer .footer-two .footer-two-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .footer-two .footer-two-flex .img {
+    width: 100px;
+    height: 100px;
+    background-size: cover
+}
+
+footer .footer-two .footer-two-flex:first-of-type .img {
+    background-image: url("http://naturalfactors.com/wp-content/uploads/2015/01/7Z9A0021-200x200.jpg")
+}
+
+footer .footer-two .footer-two-flex:nth-of-type(2) .img {
+    background-image: url("http://r3.ilikewallpaper.net/ipad-wallpapers/download/31994/Natural-Scenery-Road-ipad-wallpaper-ilikewallpaper_com_200.jpg")
+}
+
+footer .footer-two .footer-two-flex:last-of-type .img {
+    background-image: url("http://teamne.net/wp-content/uploads/enchanting-front-garden-design-ideas-showcasing-natural-stone-path-way-feat-green-grass-with-concrete-edge-and-natural-ornamental-tree-at-beautiful-landscapes-for-houses-beautiful-landscapes-for-house-200x200.jpg")
+}
+
+footer .footer-two .footer-two-flex .text {
+    width: calc(100% - 100px)
+}
+
+footer .footer-two .footer-two-flex .text {
+    padding-left: 15px
+}
+
+footer .footer-three ul {
+    width: 100%;
+    margin-top: 15px;
+    padding: 0
+}
+
+footer .footer-one label {
+    color: #555
+}
+
+footer .footer-one form {
+    padding-top: 25px;
+    display: flex
+}
+
+footer .footer-one form input {
+    padding: 7px;
+    text-align: left;
+    outline: 0;
+    border: 0;
+    border: 1px solid #ddd
+}
+
+footer .footer-one form input[type="email"] {
+    width: 100%;
+    background: #fff
+}
+
+footer .footer-one form input[type="submit"] {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 7px 15px;
+    background: #6ddbc5;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+
+footer .footer-one form input[type="submit"]:hover {
+    background: #f26b6b
+}
+
+footer .footer-one ul li,
+footer .footer-one ul i {
+    margin-right: 7px
+}
+
+footer .footer-one ul i,
+footer span {
+    color: #aaa
+}
+
+footer .footer-one ul li .fa {
+    color: #6ddbc5
+}
+
+footer .footer-one ul li:hover .fa {
+    color: #f26b6b
+}
+
+footer .footer-three ul li {
+    display: inline-block;
+    width: 32%;
+    height: 32%;
+    background-size: cover
+}
+
+footer .footer-three ul li:first-of-type {
+    background-image: url("http://www.northeasthorticultural.com/images/photogallery/natural-screen/natural-5a.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(2) {
+    background-image: url("http://loyfa-natural-resort.com/files/three.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(3) {
+    background-image: url("http://loyfa-natural-resort.com/files/two.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(4) {
+    background-image: url("http://teamne.net/wp-content/uploads/alluring-tropical-garden-plans-showcasing-natural-stepping-stone-with-green-herbaceous-border-and-green-lawn-also-natural-ornamental-tree-at-beautiful-landscapes-for-houses-beautiful-landscapes-for-ho-200x200.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(5) {
+    background-image: url("http://www.joshta.com/i/2016/05/alluring-stainless-steel-pool-ladder_mosaic-sapphire-ceramic-pool-base-floor_brown-varnished-wooden-frame-pool-chaise_grey-natural-concrete-pool-step_grey-natural-concrete-pool-side-200x200.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(6) {
+    background-image: url("https://s-media-cache-ak0.pinimg.com/236x/e0/76/03/e076030a08f5029dd04c3e6bcc8673f5.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(7) {
+    background-image: url("http://teamne.net/wp-content/uploads/terrific-archaic-home-architecture-showcasing-natural-brick-stone-house-wall-with-minimalist-ornamental-plants-and-green-lawn-at-beautiful-landscapes-for-houses-beautiful-landscapes-for-houses-garden-200x200.jpg")
+}
+
+footer .footer-three ul li:nth-of-type(8) {
+    background-image: url("http://www.naturalheritage.com/Image_Galleries/Natural_Areas/Hall%20Creek%20Barrens%20Natural%20Area/Barrens3.jpg?Action=thumbnail&Width=200&Height=200&Algorithm=fill_proportional&USM=1")
+}
+
+footer .footer-three ul li:last-of-type {
+    background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTckquf7Yyn87tTdHzU_dWYYrOzPKMnq39nBgdShNhKQSa2gzGv")
+}
+
+.footer-footer {
+    padding-bottom: 25px;
+}
+
+/* ====================================== End Footer ====================================== */
+/* ====================================== Start Section Loading ====================================== */
+.loading {
+    width: 100%;
+    height: 100vh;
+    background: #16171d;
+    opacity: 0.9;
+    z-index: 9999999999;
+    position: fixed;
+}
+
+/* ====================================== End Section Loading ====================================== */
+/* ====================================== Start Scroll To Top ====================================== */
+#scroll-top {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    color: #DDD;
+    background: #272727;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 99999;
+    cursor: pointer;
+    display: none
+}
+
+#scroll-top:hover {
+    background: #444
+}
+
+/* ====================================== End Scroll To Top ====================================== */
+/* ====================================== Start Framework ====================================== */
+.small-border {
+    width: 100px;
+    border-top: 3px solid #f26b6b;
+    margin: 50px auto
+}
+
+/* ====================================== End Framework ====================================== */
+/* ====================================== Start Mediaquery ====================================== */
+@media(min-width: 100px) and (max-width: 499px) {
+
+    /* Custom */
+    .header .header-flex>div:first-of-type h2,
+    .header .header-flex>div:first-of-type ul {
+        position: static;
+        margin: 25px
+    }
+
+    .about ul li {
+        width: 80%;
+        height: 70vw
+    }
+
+    .progress-pure .progress-flex,
+    footer .container {
+        display: block;
+        margin: auto
+    }
+
+    .progress-pure .progress-flex>div:first-of-type {
+        border: 0;
+        border-bottom: 1px solid #c1efe7
+    }
+
+    .progress-pure .progress-flex>div {
+        display: inline-block;
+        width: 250px;
+        border: 0;
+        margin: 25px;
+        border-bottom: 1px solid #c1efe7;
+    }
+
+    .unique-screen {
+        width: 275px;
+        height: 375px
+    }
+
+    .unique-screen .mobile {
+        width: 150px;
+        height: 335px;
+        padding: 40px 7px;
+        right: 0
+    }
+
+    .service-other-content,
+    .meet .meet-content,
+    .stories .stories-content,
+    footer .flex {
+        display: block
+    }
+
+    .service-other-content>div {
+        max-width: 400px;
+        min-height: 250px;
+        margin: 25px auto
+    }
+
+    .service-other-content>div:first-of-type {
+        margin: auto
+    }
+
+    .some .da-thumbs {
+        max-width: 250px;
+        margin: auto
+    }
+
+    .some .da-thumbs>div {
+        width: 100%;
+        margin-bottom: 15px
+    }
+}
+
+@media(min-width: 500px) and (max-width: 767px) {
+
+    /* X Small Screen */
+    .about ul li:first-of-type {
+        width: 95%;
+        height: 50vw;
+        display: block;
+        margin: 1% auto
+    }
+
+    .about ul li:not(:first-child) {
+        width: 47%;
+        height: 50vw
+    }
+
+    .progress-pure .progress-flex,
+    footer .container {
+        display: block;
+        margin: auto
+    }
+
+    .progress-pure .progress-flex>div:first-of-type {
+        border: 0;
+        border-bottom: 1px solid #c1efe7
+    }
+
+    .progress-pure .progress-flex>div {
+        display: inline-block;
+        width: 250px;
+        border: 0;
+        border-bottom: 1px solid #c1efe7;
+    }
+
+    .unique-screen {
+        margin-left: 25px;
+        width: 375px;
+        height: 475px
+    }
+
+    .unique-screen .mobile {
+        width: 180px;
+        height: 335px;
+        padding: 40px 10px;
+    }
+
+    .service-other-content,
+    .meet .meet-content,
+    .stories .stories-content,
+    footer .flex {
+        display: block
+    }
+
+    .service-other-content>div {
+        max-width: 500px;
+        min-height: 300px;
+        margin: 25px auto
+    }
+
+    .service-other-content>div:first-of-type {
+        margin: auto
+    }
+
+    .some .da-thumbs>div {
+        width: 50%
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+
+    /* Small Screen */
+    .about ul li {
+        width: 75%;
+        height: 50vw;
+        display: block;
+        margin: 3% auto
+    }
+
+    .progress-pure .progress-flex {
+        display: block;
+        height: auto
+    }
+
+    .progress-pure .progress-flex>div:first-of-type {
+        border: 0;
+        border-bottom: 1px solid #c1efe7
+    }
+
+    .progress-pure .progress-flex>div {
+        display: inline-block;
+        width: 250px;
+        border: 0;
+        border-bottom: 1px solid #c1efe7;
+    }
+
+    .some .da-thumbs>div {
+        width: 33.33333%
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    /* Medium Screen */
+    .about ul li {
+        height: 30vw;
+    }
+}
+
+@media(min-width: 1200px) {
+    /* Larg Screen */
+}
+
+/* ====================================== End Mediaquery ====================================== */
+
+
+
+
+
+
+
+
+
+
+
+.messenger {
+  margin: 20px auto;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+  background: white; /* Change the background color to white */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  animation: flyin 0.75s;
+}
+
+.messenger .messages {
+  height: 250px;
+  margin: 20px;
+  background: white; /* Change the background color to white */
+  overflow-y: scroll;
+  border-radius: 2px;
+}
+
+.messenger .messages .message {
+  padding: 10px;
+  animation: fade 0.25s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.messenger .input {
+  display: flex;
+  margin: 0px 20px 20px 20px;
+}
+
+.messenger .input .btn,
+.messenger .input .emoji-btn {
+  height: 40px;
+  line-height: 40px;
+  width: 75px;
+  text-align: center;
+  background: #222;
+  border-radius: 2px;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+
+.messenger .input .btn:hover {
+  background: #ffffff;
+  cursor: pointer;
+  color: #16171d;
+}
+
+.messenger .input input {
+  border-radius: 2px;
+  margin-right: 0px;
+  border: none;
+  width: 100%;
+  flex: 1;
+  padding: 0px 20px;
+  background: #222;
+  color: white;
+  font-weight: 600;
+  outline: none;
+}
+
+@keyframes fade{
+  from{ opacity:0;}
+  to{opacity:1;}
+}
+@keyframes flyin{
+    from{ transform:translateY(400px); opacity:0;}
+    to{ transform:translateY(0px); opacity:1;}
+}
+
+
+.emoji-popup{
+   position:absolute;
+   top: -140px;
+   left: 10px;
+   height:130px;
+   width:194px;
+   background:#999;
+   border-radius:2px;
+   text-align:left;
+   overflow-y:auto;
+   opacity:0;
+   pointer-events:none;
+   transition:all 0.25s;
+   box-sizing:border-box;
+}
+.emoji-wrapper{
+   overflow:hidden;
+   padding:10px;
+   box-sizing:border-box;
+}
+.emoji-popup .emoji-img{
+   margin:auto;
+   width:30px;
+   height:30px;
+   text-align:center;
+   border-radius:5px;
+}
+
+.emoji-popup .emoji-img:hover{
+   background:rgba(0, 0, 0, 0.25);
+}
+
+
+
+.emoji-btn:after{
+   content: '';
+   position:absolute;
+   border:10px solid transparent;
+   border-top:10px solid #999;
+   top:-10px;
+   left:30px;
+   transition:all 0.25s;
+   opacity:0;
+}
+.emoji-btn.open:after{
+   opacity:1;
+}
+.emoji-btn.open .emoji-popup{
+   opacity:1;
+   pointer-events:initial;
+}
+
+
+
+
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+
+
+
+
+menu {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper label {
+  width: 20vw;
+  height: 10vw;
+  font-size: 3.5vw;
+  cursor: pointer;
+}
+
+.wrapper label:nth-of-type(1), .m1 { background-color: LightSlateGray; }
+.wrapper label:nth-of-type(2), .m2 { background-color: grey; }
+.wrapper label:nth-of-type(3), .m3 { background-color: GoldenRod; }
+.wrapper label:nth-of-type(4), .m4 { background-color: Brown; }
+.wrapper label:nth-of-type(5), .m5 { background-color: DarkOrchid; }
+.wrapper label:nth-of-type(6), .m6 { background-color: DarkSlateBlue; }
+.wrapper label:nth-of-type(7), .m7 { background-color: LightSalmon; }
+.wrapper label:nth-of-type(8), .m8 { background-color: MediumSeaGreen; }
+.wrapper label:nth-of-type(9), .m9 { background-color: Sienna; }
+
+.wrapper .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8vw;
+  height: 8vw;
+  border: .5vw solid white;
+  border-radius: 50%;
+  opacity: 0.5;
+  margin: 8vw auto 2vw auto;
+}
+
+.wrapper label:hover .circle {
+  animation: circle 1s infinite;  
+}
+
+/* Animations */
+@-webkit-keyframes circle {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+
+.showMenu {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  color: yellow;
+  font-size: 3.5vw;
+  position: absolute;
+  opacity: .9;
+  cursor: crosshair;
+  display: none;
+}
+
+.showMenu::after {
+  content: "(Click in this menu to close)";
+  position: absolute;
+  top: 2.5rem;
+  justify-content: center;
+}
+
+
+/* Default styles */
+.enseignante {
+  font-size: 1vw;
+  color: #fff;
+}
+
+/* Hover styles */
+.enseignante:hover {
+  color: #FFA500; /* Change color on hover to orange (adjust as needed) */
+}

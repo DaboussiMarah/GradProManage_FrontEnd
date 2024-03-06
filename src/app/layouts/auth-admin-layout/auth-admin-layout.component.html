@@ -1,0 +1,41 @@
+ <div id="wrapper">
+    <div id="left">
+      <div id="signin">
+        <div class="logo">
+          <h1 style="color: #ccc;">GradProManage</h1>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="loginadmin()">
+          <div class="mb-3">
+            <label for="exampleInputEmail1"  style="color: #ccc;">Email</label>
+            <input type="email" class="text-input"  name="email" formControlName="email" >
+          </div>
+          <div class="mb-4">
+            <label for="exampleInputPassword1" style="color: #ccc;">Password</label>
+            <input type="password" class="text-input"   name="password" formControlName="password">
+          </div>
+          
+          <button type="submit" class="primary-btn">LogIn</button>
+          
+        </form>
+        <div class="or">
+          <hr class="bar" />
+          <span>OR</span>
+          <hr class="bar" />
+        </div>
+        <a routerLink="/user_home" class="secondary-btn">Go back to home</a>
+      </div>
+      <footer id="main-footer">
+        <p>Made by &copy; Firas nefzi - Marah dabousi</p>
+      </footer>
+    </div>
+    <div id="right">
+      <div id="showcase">
+        <div class="showcase-content">
+          <h1 class="showcase-text">
+            Welcome to <strong>ADMIN</strong> page
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  

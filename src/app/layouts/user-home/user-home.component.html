@@ -1,0 +1,166 @@
+<form class="form-search" method="GET" action="https://www.google.com/search" target="_blank">
+    <input type="text" name="q" placeholder="search in google ..." onEnter="send()" autocomplete="off" />
+</form>
+<header class="header">
+    <div class="container">
+        <div class="header-flex">
+            <div><!-- 01 -->
+                <h2><a href="#">GPM</a></h2>
+                <div data-active="active">
+                    <a routerLink="" routerLinkActive="active" (click)="scrollTo('home')">Home</a>
+                    <a routerLink="login" routerLinkActive="active" (click)="scrollTo('login')">Work</a>
+                    <a routerLink="about" routerLinkActive="active" (click)="scrollTo('about')">About</a>
+                    <a routerLink="contact" routerLinkActive="active" (click)="scrollTo('contact')">Contact</a>
+                    <a><i class="fa fa-cart-plus"></i></a>
+                    <a><i class="fa fa-search"></i></a>
+                </div>
+                
+            </div>
+            <div><!-- 02 -->
+                <h2>Bonjour cher étudiant</h2>
+            </div>
+            <div><!-- 03 -->
+                <h2>Welcome<br>to GradProManage</h2>
+            </div>
+            <div><!-- 04 -->
+            </div>
+            <div><!-- 05 -->
+                <a href="#about">Learn more</a>
+            </div>
+            <div><!-- 06 -->
+                <div data-active="active">
+                    <a class="active" href="#">01 Intro</a>
+                    <a href="#login">02 Work</a>
+                    <a href="#about">03 About</a>
+                    <a href="#contact">04 Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- ---------------------------- End Header ---------------------------------- -->
+<!-- ---------------------------- Start About ---------------------------------- -->
+<section class="about" id="login">
+    <div class="container">
+        <h3>Login</h3>
+        <h2>Comment se connecter ?</h2>
+        <div class="small-border"></div>
+        <p class="lead">Connectez-vous en tant qu'etudiant, enseignant out administrateur.</p>
+        <ul>
+            <li (click)="GoToLoginAdmin()">
+              <i class="fa fa-coffee fa-2x"></i>
+              <div class="about-li-div"></div>
+              <a ><h4>Admin</h4></a>
+
+            </li>
+            <li (click)="GoToLoginEtud()">
+              <i class="fa fa-coffee fa-2x" ></i>
+              <div class="about-li-div"></div>
+              <a routerLink="login-etud" routerLinkActive="active"><h4>Etudiant</h4></a>
+            </li>
+            <li (click)="GoToLoginEns()">
+              <i class="fa fa-heartbeat fa-2x"></i>
+              <div class="about-li-div"></div>
+              <a routerLink="login-teacher" routerLinkActive="active"><h4>Enseignants</h4></a>
+            </li>
+          </ul>
+          
+    </div>
+</section>
+<div class="images">
+    <div class="container">
+        <ul>
+            <li><a href="#"><img src="https://www.classe.cornell.edu/rsrc/Home/Internal/DesignDraftingServices/CommonLogos/NIH_Logo.png" width="85" /></a></li>
+            <li><a href="#"><img src="http://isaca-tunisie.org/wp-content/uploads/2017/03/ISET-rades_logo-e1491393217357.jpg" width="85" /></a></li>
+            <li><a href="#"><img src="https://ween.tn/media/cache/my_Logothumb/rc/uscAXxYd//uploads/image/46361/46359/avatar/avatar.png" width="85" /></a></li>
+            <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Seal_of_the_Dominican_Order.png" width="85" /></a></li>
+            <li><a href="#"><img src="https://newsroom.ionis-group.com/wp-content/uploads/2019/09/isg-mediatheque-logo.png" width="85" /></a></li>
+            <li><a href="#"><img src="https://iconape.com/wp-content/png_logo_vector/isi-logo.png" width="85" /></a></li>
+        </ul>
+    </div>
+</div>
+<!-- ---------------------------- End Images ---------------------------------- -->
+<!-- ---------------------------- Start Some ---------------------------------- -->
+<div class="container" id="about">
+    <section class="stories">
+        <h3>Que faison-nous</h3>
+        <h2>STORY ABOUT US</h2>
+        <div class="small-border"></div>
+        <p class="lead">‘’GradProManage’’ est un site web innovant spécialement conçue pour simplifier la gestion des projets de fin d'études. Il offre aux étudiants un ensemble d'outils intuitifs et puissants pour organiser, suivre et réussir leur projet de diplôme.</p>
+    </section>
+</div>
+<!-- ---------------------------- End Stories ---------------------------------- -->
+<!-- ---------------------------- Start Map ---------------------------------- -->
+<section class="map">
+    <div class="map-content">
+        <i class="fa fa-map-marker"></i>
+        <h4>Contact</h4>
+    </div>
+</section>
+<!-- ---------------------------- End Map ---------------------------------- -->
+<!-- ---------------------------- Start Footer --------------------------------- -->
+<footer>
+    <div class="container" id="contact">
+        <div class="footer-content footer-one">
+            <h2>Contacter nous</h2>
+            <hr>
+
+            <form>
+                <input type="email" placeholder="Your Email" />
+                <input type="submit" value="Send" />
+            </form>
+        </div>
+        <div class="footer-content footer-two">
+            <h5>Blogs</h5>
+            <div class="footer-two-flex">
+                <div class="img">
+                    <div><a href="#"><i class="fa fa-anchor"></i></a></div>
+                </div>
+                <div class="text">
+                    <p>L'avenir de l'éducation : Tendances et innovations qui façonnent l'apprentissage</p>
+                    <span><a href="#">jan 9, 2016</a></span>
+                </div>
+            </div>
+            <div class="footer-two-flex">
+                <div class="img">
+                    <div><a href="#"><i class="fa fa-anchor"></i></a></div>
+                </div>
+                <div class="text">
+                    <p>Les habitudes d'étude des étudiants réussis : Stratégies pour l'excellence académique</p>
+                    <span><a href="#">jan 9, 2016</a></span>
+                </div>
+            </div>
+            <div class="footer-two-flex">
+                <div class="img">
+                    <div><a href="#"><i class="fa fa-anchor"></i></a></div>
+                </div>
+                <div class="text">
+                    <p>L'éducation STEM : Inspirer la prochaine génération d'innovateurs</p>
+                    <span><a href="#">jan 9, 2016</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+</footer>
+<!-- ---------------------------- End Footer ----------------------------------- -->
+<!-- ---------------------------- Start Section Loading -------------------------------- -->
+<div class="loading">
+    Test
+</div>
+<!-- ---------------------------- End Section Loading ---------------------------------- -->
+<!-- ---------------------------- Start Scroll To Top ---------------------------------- -->
+<div id="scroll-top">
+    <i class="fa fa-chevron-up fa-3x"></i>
+</div>
+<!-- ---------------------------- End Scroll To Top ---------------------------------- -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/thumbs.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/jquery.nicescroll.min.js"></script>

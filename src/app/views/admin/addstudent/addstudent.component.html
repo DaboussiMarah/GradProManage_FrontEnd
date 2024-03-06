@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title fw-semibold mb-4">Forms</h5>
+      <div class="card">
+        <div class="card-body">
+          <form #f="ngForm" (ngSubmit)="add(f)">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Lastname</label>
+                <input type="text" class="form-control" name="lastname" #lastname="ngModel" ngModel required>
+              </div>
+              
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Firstname</label>
+                <input type="text" class="form-control"  name="firstname" #firstname="ngModel" ngModel required>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" name="email" #email="ngModel" ngModel required>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Département</label>
+              <input type="text" class="form-control" name="departement" #departement="ngModel" ngModel required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" >Submit</button>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  </div>

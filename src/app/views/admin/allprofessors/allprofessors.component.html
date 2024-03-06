@@ -1,0 +1,149 @@
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800"></h1>
+                    
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">GradPro Manage Enseignants</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <td>cin</td>
+                                            <th>lastname</th>
+                                            <th>firstname</th>
+                                            <th>email</th>
+                                            <td>password</td>
+                                            <th>poste</th>
+
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <td>cin</td>
+                                            <th>lastname</th>
+                                            <th>firstname</th>
+                                            <th>email</th>
+                                            <td>password</td>
+                
+                                            <td>poste</td>
+
+                                            <th>Actions</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr *ngFor="let item of dataArray ; index as i">
+                                            <td>{{item.cin}}</td>
+                                            <td>{{item.lastname}}</td>
+                                            <td>{{item.firstname}}</td>
+                                            <td>{{item.email}}</td>
+                                            <td>{{item.password}}</td>
+                                            <td>{{item.poste}} </td>
+                                            <td>
+                                                <button type="button" class="btn btn-outline-dark"  (click)="getdata(item.lastname,item.firstname,item.email,item.password,item.poste,item.id)" >update</button>
+                                                <button type="button" class="btn btn-outline-dark" (click)="delete(item._id,i)" >delete</button>
+                                                
+
+
+                                            </td>
+                                        </tr>
+                                        
+                                        
+                                       
+                                        
+                                
+                                       
+                                        
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+
+
+
+
+
+
+
+                
+                
+<div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Enseignant</h4>
+                <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <!-- form update start here-->
+
+                <form #f="ngForm" (ngSubmit)="updatenewprofessor(f)">
+                    <fieldset>
+
+
+                        <!-- nom-->
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">lastname</label>
+                            <input type="text"    name="lastname" #lastname="ngModel"  [(ngModel)]="dataEnseignant.lastname" ngModel required     class="form-control"  placeholder="lastname..">
+                        </div>
+                        <!-- prenom -->
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">firstname</label>
+                            <input type="text" class="form-control" 
+                                placeholder="firstname.." name="firstname" #firstname="ngModel"    [(ngModel)]="dataEnseignant.firstname" ngModel  ngModel required >
+                        </div>
+                        <!-- email-->
+                        <div class="form-group">
+                            <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+                            <input type="email" class="form-control" 
+                                placeholder="Email.." name="email" #email="ngModel"  [(ngModel)]="dataEnseignant.email" ngModel  required>
+                        </div>
+                        <!-- password-->
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">password</label>
+                            <input type="text" class="form-control" 
+                                placeholder="password..." name="password" #password="ngModel"   [(ngModel)]="dataEnseignant.password"   ngModel required >
+                        </div>
+
+                        <!-- poste-->
+                        <div class="form-group">
+                            <label for="exampleInputPassword1" class="form-label mt-4">password</label>
+                            <input type="text" class="form-control" 
+                                placeholder="poste..." name="poste" #poste="ngModel"   [(ngModel)]="dataEnseignant.poste"   ngModel required >
+                        </div>
+                        
+
+
+
+                        <br>
+                
+                        <button class="btn btn-dark">Modifier</button>
+                    </fieldset>
+                </form>
+
+
+                <!-- form update end here-->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+

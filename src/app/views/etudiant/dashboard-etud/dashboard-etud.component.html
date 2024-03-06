@@ -1,0 +1,313 @@
+<!--<button >déconnexion</button>-->
+
+
+<form class="form-search" method="GET" action="https://www.google.com/search" target="_blank">
+  <input type="text" name="q" placeholder="search in google ..." onEnter="send()" autocomplete="off" />
+</form>
+<header class="header">
+  <div class="container">
+      <div class="header-flex">
+          <div><!-- 01 -->
+              <h2><a href="#">GPM</a></h2>
+              <div data-active="active">
+                  <a routerLink="" routerLinkActive="active">{{userName}}</a>
+                  <a routerLink="login" routerLinkActive="active">Work</a>
+                  <a routerLink="about" routerLinkActive="active" >Chat</a>
+                  <a    (click)="logout()">Logout</a>
+                  <!--<a  routerLinkActive="active" (click)="logout()">Logout</a>-->
+                  <a><i class="fa fa-cart-plus"></i></a>
+                  <a><i class="fa fa-search"></i></a>
+              </div>
+              
+          </div>
+          <div><!-- 02 -->
+              <h2>Bonjour cher étudiant </h2>
+              <div class="user-info"> GradProManage </div>
+          </div>
+          <div><!-- 03 -->
+              <h2>Welcome<br> {{userName}} </h2>
+          </div>
+          <div><!-- 04 -->
+          </div>
+          <div><!-- 05 -->
+              
+          </div>
+          <div><!-- 06 -->
+              <div data-active="active">
+                  <a class="active" href="#">01 Intro</a>
+                  <a href="#login">02 Work</a>
+                  <a href="#chat">03 Chat</a>
+                  <a href="#contact">04 Contact</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<!-- ---------------------------- End Header ---------------------------------- -->
+<!-- ---------------------------- Start About ---------------------------------- -->
+
+
+  <div class='wrapper'><br><br><br>
+    <h1>Soumettre votre projet aux enseignants disponibles</h1>
+    <h3>Si vous souhaitez soumettre votre projet à l'un de nos enseignants disponibles, suivez ces étapes simples :</h3><br>
+  <menu>
+    <label data-id="m1" *ngFor="let enseignant of dataArray">
+      <div>
+        <div class="enseignante">Prenom : {{ enseignant.lastname }}</div>
+        <div class="enseignante">Nom : {{ enseignant.firstname }}</div>
+        <div>
+          <h4 class="enseignante">Poste : {{ enseignant.poste }}</h4>
+          <p class="enseignante">Email : {{ enseignant.email }}</p>
+          <p class="enseignante">Poste : {{ enseignant.poste }}</p>
+    
+        </div>
+        <button class="btn btn-outline-primary" (click)="onOpenHandled(enseignant._id)">postuler</button>
+      </div>
+    
+    </label>
+   </menu>
+  </div>
+  
+<div class="images">
+  <div class="container">
+      <ul>
+          <li><a href="#"><img src="https://www.classe.cornell.edu/rsrc/Home/Internal/DesignDraftingServices/CommonLogos/NIH_Logo.png" width="85" /></a></li>
+          <li><a href="#"><img src="http://isaca-tunisie.org/wp-content/uploads/2017/03/ISET-rades_logo-e1491393217357.jpg" width="85" /></a></li>
+          <li><a href="#"><img src="https://ween.tn/media/cache/my_Logothumb/rc/uscAXxYd//uploads/image/46361/46359/avatar/avatar.png" width="85" /></a></li>
+          <li><a href="#"><img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Seal_of_the_Dominican_Order.png" width="85" /></a></li>
+          <li><a href="#"><img src="https://newsroom.ionis-group.com/wp-content/uploads/2019/09/isg-mediatheque-logo.png" width="85" /></a></li>
+          <li><a href="#"><img src="https://iconape.com/wp-content/png_logo_vector/isi-logo.png" width="85" /></a></li>
+      </ul>
+  </div>
+</div>
+<!-- ---------------------------- End Images ---------------------------------- -->
+<!-- ---------------------------- Start Some ---------------------------------- -->
+<div class="about" id="about">
+ 
+      <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':display}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Ajouter Cahier de Charge</h4>
+                   
+                </div>
+                <div class="modal-body">
+                    <!-- form cc start here-->
+      
+                    <form  #f="ngForm" (ngSubmit)=addcahier(f) >
+                          <!-- Champ nomProjet -->
+                          <label for="nomprojet">Nom du Projet:</label>
+                          <input type="text" class="form-control" id="nomprojet"  name="nomprojet"  #nomprojet="ngModel" ngModel required>
+                        
+                          <!-- Champ resume -->
+                          <label for="resume">Résumé du Projet:</label>
+                          <input type="text" class="form-control" name="resume"   #resume="ngModel" ngModel  rows="4"  required>
+                        
+                          <!-- Champ technologie -->
+                          <label for="technologie">Technologie utilisée:</label>
+                          <input type="text" class="form-control" id="technologie" name="technologie"  #technologie="ngModel" ngModel        required>
+                        
+                         
+                      
+                      <!-- Champ nombinome -->
+                          <label for="nombinome">nom de binômes:</label>
+                          <input type="text" class="form-control" id="nombinome" name="nombinome"   #nombinome="ngModel" ngModel     required>
+                          
+                      <label for="nombinome">ID enseignant:</label>
+                          <input type="text" class="form-control" id="idenseignant" name="idenseignant"   #idenseignant="ngModel" ngModel [(ngModel)]="enseignantSelectionneId"    required>
+                          
+                      
+                      <div class="alert alert-dismissible alert-secondary" *ngIf="messageSucces">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>{{messageSucces}}</strong> 
+                      </div>
+                      
+                        <div>
+                            <button type="submit" class="btn btn-primary"  >Envoyer </button>
+                        <button type="button" class="close" aria-label="Close" (click)="onCloseHandled()"><span
+                          aria-hidden="true">Annuler</span></button>
+                      </div>
+                        </form>
+                        
+      
+                    <!-- &times;   <section class="stories">
+      <h3>Messenger</h3>
+      <h2>Vous pouvez discuter avec des collègues et poser des questions.</h2>
+      <div class="small-border"></div>
+      
+      <div class="messenger">
+        <div class="messages">
+           <div class="message">Test Message</div>
+           <div class="message" readonly>{{ messageDisplay }}</div>
+        </div>
+            <div class="input">
+
+              <div class="input">
+                <input type="text" placeholder="Type message here...">
+                <button class="btn" (click)="sendMessage()">Send</button>
+              </div>
+            </div>
+          </div>
+
+      </section>-->
+                </div>
+      
+            </div>
+        </div>
+      </div>
+      
+</div>
+
+<!-- ---------------------------- End Stories ---------------------------------- -->
+<!-- ---------------------------- Start Map ---------------------------------- -->
+<section class="map">
+  <div class="map-content">
+      <i class="fa fa-map-marker"></i>
+      <h4>Contact</h4>
+  </div>
+</section>
+<!-- ---------------------------- End Map ---------------------------------- -->
+<!-- ---------------------------- Start Footer --------------------------------- -->
+<footer>
+  <div class="container" id="contact">
+      <div class="footer-content footer-one">
+          <h2>Contacter nous</h2>
+          <hr>
+
+          <form>
+              <input type="email" placeholder="Your Email" />
+              <input type="submit" value="Send" />
+          </form>
+      </div>
+      <div class="footer-content footer-two">
+          <h5>Blogs</h5>
+          <div class="footer-two-flex">
+              <div class="img">
+                  <div><a href="#"><i class="fa fa-anchor"></i></a></div>
+              </div>
+              <div class="text">
+                  <p>L'avenir de l'éducation : Tendances et innovations qui façonnent l'apprentissage</p>
+                  <span><a href="#">jan 9, 2016</a></span>
+              </div>
+          </div>
+          <div class="footer-two-flex">
+              <div class="img">
+                  <div><a href="#"><i class="fa fa-anchor"></i></a></div>
+              </div>
+              <div class="text">
+                  <p>Les habitudes d'étude des étudiants réussis : Stratégies pour l'excellence académique</p>
+                  <span><a href="#">jan 9, 2016</a></span>
+              </div>
+          </div>
+          <div class="footer-two-flex">
+              <div class="img">
+                  <div><a href="#"><i class="fa fa-anchor"></i></a></div>
+              </div>
+              <div class="text">
+                  <p>L'éducation STEM : Inspirer la prochaine génération d'innovateurs</p>
+                  <span><a href="#">jan 9, 2016</a></span>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <hr>
+</footer>
+<!-- ---------------------------- End Footer ----------------------------------- -->
+<!-- ---------------------------- Start Section Loading -------------------------------- -->
+<div class="loading">
+  Test
+</div>
+<!-- ---------------------------- End Section Loading ---------------------------------- -->
+<!-- ---------------------------- Start Scroll To Top ---------------------------------- -->
+<div id="scroll-top">
+  <i class="fa fa-chevron-up fa-3x"></i>
+</div>
+<!-- ---------------------------- End Scroll To Top ---------------------------------- -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugin.js"></script>
+<script src="js/thumbs.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+<script src="js/jquery.nicescroll.min.js"></script>
+
+
+
+
+
+
+  <!--<section class="panel important">
+    <h2>Import table</h2>
+    <input  type="file" accept=".pdf" />
+    
+  (change)="onFileSelected($event)"  ki tged l back tethat f input edhika
+    <button pButton type="button" label="Import" ></button>
+   (click)="importPdf()" tethat f button
+
+      <p-table>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nom Du fichier</th>
+                <th>Supprimer</th>
+               
+            </tr>
+            <tr>
+              <td>test</td>
+              <td><button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-danger p-button-outlined"></button></td>
+          </tr>
+          <tr>
+            <td>test</td>
+            <td><button pButton pRipple type="button" icon="pi pi-times" class="p-button-rounded p-button-danger p-button-outlined"></button></td>
+        </tr>
+        </ng-template>
+    </p-table>
+    
+  </section>
+  PAGE 
+  <div class="messenger">
+  <div class="messages">
+     <div class="message">Test Message</div>
+  </div>
+      <div class="input">
+        <div class="chat-listcontainer">
+          <textarea class="chat-message-list" readonly>{{ messageDisplay }}</textarea>
+        </div>
+        <div class="chat-input-container">
+          <input type="text" id="message-input" placeholder="Type your message..." [(ngModel)]="messageText">
+          <button class="btn" (click)="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="messenger">
+  <div class="messages">
+     <div class="message">Test Message</div>
+  </div>
+  <div class="input">
+     <input type="text" placeholder="Type message here!"/>
+     <div class="emoji-btn open">:]
+        <div class="emoji-popup"><div class="emoji-wrapper"></div></div>
+     </div>
+     <div class="btn">Send</div>
+  </div>
+</div>
+
+-->
+
+
+
+
+
+
+
+
+
+               
+
+
